@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.game {
+  max-width: 600px;
+  max-height: 200px;
+  border-bottom: 8px solid #005c14;
+  margin: auto;
+}
+
+#mario {
+  width: 70px;
+  height: 70px;
+  background-image: url(img/mario.png);
+  background-size: 70px 70px;
+  background-repeat: no-repeat;
+  position: relative;
+  top: 50px;
+}
+
+#mash {
+  width: 50px;
+  height: 50px;
+  background-image: url(img/mash.png);
+  background-size: 50px 50px;
+  background-repeat: no-repeat;
+  position: relative;
+  animation: mashMov 2.5s infinite linear;
+  top: 0px;
+  width: 580px;
+}
+
+@keyframes mashMov {
+  0% {
+    left: 580px;
+  }
+  100% {
+    left: 20px;
+  }
+}
+
+.sun {
+  width: 70px;
+  height: 70px;
+  background-image: url(img/sun.png);
+  background-size: 70px 70px;
+  background-repeat: no-repeat;
+  display: block;
+  margin: 50px auto;
+}
+
+.jump {
+  animation: jump 3.5s linear;
+}
+
+@keyframes jump {
+  0% {
+    top: -150px;
+  }
+  30% {
+    top: -130px;
+  }
+  50% {
+    top: 50px;
+  }
+  80% {
+    top: 130px;
+  }
+  100% {
+    top: 150px;
+  }
+}
